@@ -1,10 +1,10 @@
-=== AZBlocks Modular Modal ===
+# AZBlocks Modular Modal
 
 <div align="left">
   <img src="img/cover.png" alt="WordPress Plugin" width="300"/>
 </div>
 
-== Description ==
+# Description
 
 The AZBlocks Modular Modal plugin is a modal window component that includes a form and can be added to any WordPress theme that uses Advanced Custom Fields (ACF).
 
@@ -19,7 +19,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
     -   Boolean toggle to enable/disable the modal window
     -   Modal form title text
 
-== Installation ==
+# Installation 🛠️
 
 **Automatic Installation:**
 
@@ -45,7 +45,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
 2. The plugin will automatically register ACF field groups for modal content
 3. Start using the "Modal Button" block in the Gutenberg editor
 
-== Usage in Themes ==
+## Usage in Themes
 
 **Basic Usage:**
 
@@ -56,7 +56,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
     - Configure button text, modal title, and content
     - Publish your content
 
-== Screenshots ==
+## Screenshots
 
 <div align="left">
   <img src="img/screenshot.png" alt="Screenshot: ACF field groups for modal content management" width="300"/>
@@ -68,9 +68,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
   <p>ACF field groups for modal content management</p>
 </div>
 
-== Changelog ==
-
-= 1.0.0 =
+### Change log
 
 -   Initial release
 -   Custom Gutenberg block for modal buttons
@@ -80,7 +78,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
 -   Theme integration support
 -   Hooks and filters for customization
 
-== Development ==
+## Development
 
 **Building the Plugin:**
 
