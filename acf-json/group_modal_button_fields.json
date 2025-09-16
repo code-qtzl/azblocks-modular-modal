@@ -1,0 +1,109 @@
+{
+	"key": "group_modal_button_fields",
+	"title": "Modal Button Fields",
+	"fields": [
+		{
+			"key": "field_button_text",
+			"label": "Button Text",
+			"name": "button_text",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "Text to display on the button",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "Open Form",
+			"maxlength": "",
+			"placeholder": "Enter button text",
+			"prepend": "",
+			"append": ""
+		},
+		{
+			"key": "field_modal_title",
+			"label": "Modal Title",
+			"name": "modal_title",
+			"aria-label": "",
+			"type": "text",
+			"instructions": "Title to display in the modal header",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "Request a demo",
+			"maxlength": "",
+			"placeholder": "Enter modal title",
+			"prepend": "",
+			"append": ""
+		},
+		{
+			"key": "field_modal_link",
+			"label": "Button URL",
+			"name": "modal_link",
+			"aria-label": "",
+			"type": "url",
+			"instructions": "URL for the button (if not using modal)",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "#",
+			"placeholder": "https://example.com"
+		},
+		{
+			"key": "field_toggle",
+			"label": "Show Modal",
+			"name": "toggle",
+			"aria-label": "",
+			"type": "true_false",
+			"instructions": "Enable to show modal on button click",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"message": "Enable modal functionality",
+			"default_value": 0,
+			"ui_on_text": "",
+			"ui_off_text": "",
+			"ui": 1
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "page"
+			}
+		],
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "post"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "Fields for configuring modal button behavior and content",
+	"show_in_rest": 1,
+	"modified": 1717699200
+}

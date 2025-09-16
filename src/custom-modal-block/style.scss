@@ -1,0 +1,307 @@
+// Modal color variables
+$modal-label-color: #293972;
+$modal-input-color: #6178ba;
+$modal-title-color: #293972;
+$modal-close-color: #293972;
+$modal-input-border: #dbe2ea;
+$modal-input-bg: #fff;
+$modal-btn-bg: #ff6600;
+$modal-btn-bg-hover: #e65c00;
+$modal-btn-text: #fff;
+$modal-privacy: #1a2a5a;
+
+#azblocks-custom-modal-block-trigger {
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background: #ff6600;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	border-radius: 40px;
+	padding: 0.75em 2em;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5em;
+	text-decoration: none; // Remove underline from links
+	display: inline-block; // Make links behave like buttons
+	text-align: center; // Center text in links
+	line-height: 1; // Consistent line height
+	transition: background-color 0.2s ease; // Smooth hover transition
+}
+
+#azblocks-custom-modal-block-trigger:hover,
+#azblocks-custom-modal-block-trigger:focus {
+	background: #e65c00;
+	text-decoration: none; // Ensure no underline on hover for links
+}
+
+// Additional styles to ensure button and link look identical
+.custom-modal-block-container {
+	.wp-block-button__link {
+		font-family: "Mulish", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		background: #ff6600 !important;
+		color: #fff !important;
+		font-size: 1.1em;
+		font-weight: 700;
+		border: none;
+		border-radius: 24px;
+		padding: 0.75em 2em;
+		cursor: pointer;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		text-decoration: none;
+		display: inline-block;
+		text-align: center;
+		line-height: 1;
+		transition: background-color 0.2s ease;
+
+		&:hover,
+		&:focus {
+			background: #e65c00 !important;
+			text-decoration: none;
+		}
+	}
+
+	button.wp-block-button__link {
+		// Ensure buttons have the same box model as links
+		box-sizing: border-box;
+	}
+}
+
+.modal {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100% !important;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.modal-dialog {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background: #f5f8fc;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+	margin: 5em 2em;
+	padding: 2.5em 3.8em;
+	width: 100%;
+	max-width: 840px;
+	position: relative;
+}
+
+.modal-title {
+	font-family: "Mulish", sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $modal-title-color;
+	margin-bottom: 1.5rem;
+}
+
+.modal-close {
+	position: absolute;
+	top: 1.5em;
+	right: 0.7em;
+	color: $modal-close-color;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+.modal-close svg {
+	width: 32px;
+	height: 32px;
+	fill: currentColor;
+}
+
+// Use Mulish for modal content
+.modal-content {
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.modal-content form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"first last"
+		"org hear"
+		"tailor tailor"
+		"privacy privacy"
+		"button button";
+	gap: 0 2em;
+	color: #1a2b49;
+}
+
+.form-group.first-name {
+	grid-area: first;
+	display: flex;
+	flex-direction: column;
+}
+.form-group.last-name {
+	grid-area: last;
+	display: flex;
+	flex-direction: column;
+}
+.form-group.organization-type {
+	grid-area: org;
+	display: flex;
+	flex-direction: column;
+}
+.form-group.how-hear {
+	grid-area: hear;
+	display: flex;
+	flex-direction: column;
+}
+.form-group.tailor-demo {
+	grid-area: tailor;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group.first-name label:after,
+.form-group.last-name label:after,
+.form-group.organization-type label:after,
+.form-group.how-hear label:after,
+.form-group.tailor-demo label:after {
+	content: " *";
+}
+
+.modal-content .privacy {
+	grid-area: privacy;
+	font-size: 0.95em;
+	color: #1a2a5a;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: flex-start;
+	gap: 0.5em;
+	white-space: normal;
+}
+
+.modal-content .form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-content .form-group.full-width {
+	grid-column: 1 / 3;
+}
+
+.modal-content label {
+	font-size: 15px;
+	color: $modal-label-color;
+	font-weight: 400;
+	line-height: 23px;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+.modal-content input[type="text"],
+.modal-content select {
+	color: $modal-input-color;
+	padding: 0.97em;
+	border: 1px solid $modal-input-border;
+	background: $modal-input-bg;
+	font-size: 15px;
+	margin-bottom: 1em;
+}
+
+.modal-content textarea {
+	min-height: 80px;
+	padding: 0.42em;
+	border: 1px solid $modal-input-border;
+	background: $modal-input-bg;
+	font-size: 23px;
+	margin-bottom: 1em;
+}
+
+.modal-content .button-group {
+	grid-area: button;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1em;
+	gap: 1em 2em;
+}
+
+.modal-content .submit-btn {
+	margin-top: 0;
+}
+
+#request-demo-btn {
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background: #ff6600;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	border-radius: 40px;
+	padding: 0.77em 2em;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5em;
+}
+
+#request-demo-btn:hover {
+	background: $modal-btn-bg-hover;
+}
+
+.modal-content input[type="checkbox"] {
+	margin-right: 0.5em;
+}
+
+.modal-content .privacy,
+.modal-content .privacy a {
+	font-size: 0.95em;
+	color: $modal-privacy;
+}
+
+.modal-content a {
+	text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+	.modal {
+		overflow-y: auto;
+		align-items: flex-start;
+		margin-top: 0;
+	}
+	.modal-content {
+		width: 98vw;
+		padding: 2.5em 1em;
+	}
+	.modal-content form {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"first"
+			"last"
+			"org"
+			"hear"
+			"tailor"
+			"privacy"
+			"button";
+		gap: 0 0;
+	}
+	.modal-close {
+		top: 4em;
+		right: 0.2em;
+	}
+
+	.modal-close svg {
+		width: 38px;
+		height: 38px;
+	}
+}

@@ -1,0 +1,329 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/custom-modal-block/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+#azblocks-custom-modal-block-trigger {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #ff6600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 40px;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 0.5em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+#azblocks-custom-modal-block-trigger:hover,
+#azblocks-custom-modal-block-trigger:focus {
+  background: #e65c00;
+  text-decoration: none;
+}
+
+.custom-modal-block-container .wp-block-button__link {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #ff6600 !important;
+  color: #fff !important;
+  font-size: 1.1em;
+  font-weight: 700;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+.custom-modal-block-container .wp-block-button__link:hover, .custom-modal-block-container .wp-block-button__link:focus {
+  background: #e65c00 !important;
+  text-decoration: none;
+}
+.custom-modal-block-container button.wp-block-button__link {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100% !important;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.modal-dialog {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #f5f8fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  margin: 5em 2em;
+  padding: 2.5em 3.8em;
+  width: 100%;
+  max-width: 840px;
+  position: relative;
+}
+
+.modal-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #293972;
+  margin-bottom: 1.5rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5em;
+  left: 0.7em;
+  color: #293972;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal-close svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.modal-content {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.modal-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "first last" "org hear" "tailor tailor" "privacy privacy" "button button";
+  gap: 0 2em;
+  color: #1a2b49;
+}
+
+.form-group.first-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.last-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: last;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.organization-type {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: org;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.how-hear {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: hear;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.tailor-demo {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tailor;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.first-name label:after,
+.form-group.last-name label:after,
+.form-group.organization-type label:after,
+.form-group.how-hear label:after,
+.form-group.tailor-demo label:after {
+  content: " *";
+}
+
+.modal-content .privacy {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: privacy;
+  font-size: 0.95em;
+  color: #1a2a5a;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 0.5em;
+  white-space: normal;
+}
+
+.modal-content .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content .form-group.full-width {
+  grid-column: 1/3;
+}
+
+.modal-content label {
+  font-size: 15px;
+  color: #293972;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.modal-content input[type=text],
+.modal-content select {
+  color: #6178ba;
+  padding: 0.97em;
+  border: 1px solid #dbe2ea;
+  background: #fff;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+
+.modal-content textarea {
+  min-height: 80px;
+  padding: 0.42em;
+  border: 1px solid #dbe2ea;
+  background: #fff;
+  font-size: 23px;
+  margin-bottom: 1em;
+}
+
+.modal-content .button-group {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: button;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1em;
+  gap: 1em 2em;
+}
+
+.modal-content .submit-btn {
+  margin-top: 0;
+}
+
+#request-demo-btn {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #ff6600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 40px;
+  padding: 0.77em 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 0.5em;
+}
+
+#request-demo-btn:hover {
+  background: #e65c00;
+}
+
+.modal-content input[type=checkbox] {
+  margin-left: 0.5em;
+}
+
+.modal-content .privacy,
+.modal-content .privacy a {
+  font-size: 0.95em;
+  color: #1a2a5a;
+}
+
+.modal-content a {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .modal {
+    overflow-y: auto;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .modal-content {
+    width: 98vw;
+    padding: 2.5em 1em;
+  }
+  .modal-content form {
+    grid-template-columns: 1fr;
+    grid-template-areas: "first" "last" "org" "hear" "tailor" "privacy" "button";
+    gap: 0 0;
+  }
+  .modal-close {
+    top: 4em;
+    left: 0.2em;
+  }
+  .modal-close svg {
+    width: 38px;
+    height: 38px;
+  }
+  .form-group.first-name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .form-group.last-name {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .form-group.organization-type {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .form-group.how-hear {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .form-group.tailor-demo {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .modal-content .privacy {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .modal-content .button-group {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}

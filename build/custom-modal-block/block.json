@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "azblocks-modular-modal/custom-modal-block",
+	"version": "1.0.0",
+	"title": "Custom Modular Modal",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A customizable button that can open a modal with a contact form or navigate to a URL.",
+	"keywords": ["button", "modal", "form", "contact"],
+	"example": {},
+	"attributes": {
+		"buttonText": {
+			"type": "string",
+			"default": "Click me"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "#"
+		},
+		"showModal": {
+			"type": "boolean",
+			"default": false
+		},
+		"modalTitle": {
+			"type": "string",
+			"default": "Custom Modal Title"
+		}
+	},
+	"supports": {
+		"html": false,
+		"background": {
+			"color": true,
+			"text": true
+		},
+		"align": ["left", "center", "right", "wide", "full"],
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"custom-fields": true
+	},
+	"textdomain": "custom-modal-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
