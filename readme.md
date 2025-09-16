@@ -6,7 +6,7 @@
 
 # Description
 
-The AZBlocks Modular Modal plugin is a modal window component that includes a form and can be added to any WordPress theme that uses Advanced Custom Fields (ACF).
+The AZBlocks Modular Modal plugin is a modal window component that includes a form and can be added to any WordPress theme that integrated [Advanced Custom Fields (ACF)](https://www.advancedcustomfields.com/).
 
 **Key Features:**
 
@@ -65,7 +65,7 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
 
 <div align="left">
   <img src="img/modal_form.png" alt="Screenshot: Modal Form" width="300"/>
-  <p>ACF field groups for modal content management</p>
+  <p>Modal Form</p>
 </div>
 
 ### Change log
