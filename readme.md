@@ -1,12 +1,8 @@
 === AZBlocks Modular Modal ===
-Contributors: Andres Zepeda
-Tags: block, modal, button, gutenberg, acf
-Tested up to: 6.6
-Stable tag: 1.0.0
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Requires at least: 6.0
-Requires PHP: 7.4
+
+<div align="left">
+  <img src="img/cover.png" alt="WordPress Plugin" width="300"/>
+</div>
 
 == Description ==
 
@@ -63,7 +59,12 @@ The AZBlocks Modular Modal plugin is a modal window component that includes a fo
 == Screenshots ==
 
 <div align="left">
-  <img src="img/screenshot.png" alt="screen shot: ACF field groups for modal content management" width="300"/>
+  <img src="img/screenshot.png" alt="Screenshot: ACF field groups for modal content management" width="300"/>
+  <p>ACF field groups for modal content management</p>
+</div>
+
+<div align="left">
+  <img src="img/modal_form.png" alt="Screenshot: Modal Form" width="300"/>
   <p>ACF field groups for modal content management</p>
 </div>
 
